@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- My css  -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Cadastrar Despesa</title>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark px-5 py-3">
+        <a class="navbar-brand " href="#">
+            <img src="../imgs/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-light font-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav w-100 d-flex justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-light active" href="index.html">Página inicial <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="cadastrar.html">Cadastrar uma despesa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="despesas.html">Ver despesas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container-fluid row p-5 mb-5 d-flex flex-column align-items-start justify-content-center">
+        <div class="col-md-8 offset-md-2 my-3 w-100 bg-primary p-3 img-radius">
+            <h1 class="display-2 p-3 text-center font-title-display">Cadastrar Despesas</h1>
+            <h4 class="display-4 text-center text-light font-h4-display" id="subtit_cadastrar">
+                <!--subtit javascript-->
+            </h4>
+        </div>
+
+        <div class="col-md-6 col-md-6 offset-md-3 w-100 bg-dark img-radius p-5">
+            <form class="text-light">
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <p>Nome da despesa:</p>
+                        <input type="text" class="form-control nome_despesa">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <p>Dia</p>
+                        <input type="text" class="form-control dia_despesa">
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <p>Mês</p>
+                        <select class="custom-select mes_despesa">
+                            <option selected disabled>Mês</option>
+                            <option value="1">Janeiro</option>
+                            <option value="2">Fevereiro</option>
+                            <option value="3">Marco</option>
+                            <option value="4">Abril</option>
+                            <option value="5">Maio</option>
+                            <option value="6">Junho</option>
+                            <option value="7">Julho</option>
+                            <option value="8">Agosto</option>
+                            <option value="9">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-7 mb-3">
+                        <p>Tipo de despesa</p>
+                        <select class="custom-select tipo_despesa">
+                            <option selected disabled value="">Tipo</option>
+                            <option value="1">Alimentação</option>
+                            <option value="2">Transporte</option>
+                            <option value="3">Saúde</option>
+                            <option value="4">Educação</option>
+                            <option value="5">Lazer</option>
+                            <option value="6">Contas</option>
+                        </select>
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <p>Valor</p>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend2">R$</span>
+                            </div>
+                            <input type="text" class="form-control valor_despesa">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary w-100 d-flex justify-content-center button_despesa" type="submit"
+                    data-toggle="modal" data-target="#modal">Verificar
+                    despesas</button>
+            </form>
+        </div>
+
+    </section>
+
+    <footer class="bg-footer w-100 m-0 row py-4 px-5 align-items-end text-center ">
+        <div class="row col-12 col-md-4 d-block row text-light ">
+            <h3>Design by:</h3>
+            <p class="display-4">Thiago Crespo</p>
+        </div>
+        <div class="row col-12 col-md-4 d-flex justify-content-center  display-5">
+            <p class=" text-light">Copyright, 2020 &copy;</p>
+        </div>
+        <div class="row col-12 col-md-4 d-flex justify-content-center text-center">
+            <a href="https://www.linkedin.com/in/thiago-crespo-felippi/" target="_blank"
+                class="ml-3 d-flex flex-column align-items-center text-light link-redes">
+                <i class="font-size fab fa-linkedin"></i>
+                <p> Linkedin </p>
+            </a>
+            <a href="https://www.facebook.com/thiago.crespofelippi" target="_blank"
+                class="ml-3 d-flex flex-column align-items-center text-light link-redes">
+                <i class="font-size fab fa-facebook-square"></i>
+                <p> Facebook </p>
+            </a>
+            <a href="https://www.instagram.com/thiago_felippi1/?hl=pt-br" target="_blank"
+                class="ml-3 d-flex flex-column align-items-center text-light link-redes">
+                <i class="font-size fab fa-instagram"></i>
+                <p> Instagram </p>
+            </a>
+        </div>
+    </footer>
+
+    <!-- my scripts  -->
+    <script src="../index.js"></script>
+    <!-- font-awesome  -->
+    <script src="https://kit.fontawesome.com/04aad246ed.js" crossorigin="anonymous"></script>
+    <!-- script for bootstrap  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
